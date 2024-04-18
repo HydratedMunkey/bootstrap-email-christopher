@@ -20,12 +20,28 @@ html, body {
 
 .left-bar {
     display: flex;
-    text-wrap: wrap;
     background-color: #F8AD9D;
     justify-content: center;
     align-items: flex-start;
+    padding-top: 10%;
 }
 
 .right-bar {
     background-color: #F08080;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.email-box {
+    background-color: #DB6C79;
+    height: 10%;
+    margin-top: 10%;
+    width: 70%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 4px #d13b4d;
 }
