@@ -1,0 +1,31 @@
+html, body {
+    height: 100vh;
+}
+
+/* column {
+    border: 2px solid purple;
+} */
+
+.top-bar {
+    background-color: #DB6C79;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 15vh;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.left-bar {
+    display: flex;
+    text-wrap: wrap;
+    background-color: #F8AD9D;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.right-bar {
+    background-color: #F08080;
+}
