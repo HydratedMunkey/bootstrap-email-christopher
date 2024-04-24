@@ -1,5 +1,6 @@
  html, body {
     height: 100%;
+    /* overflow: hidden; */
  }
 
 /* column {
@@ -10,11 +11,12 @@
     background-color: #F08080;
 }
 
+
 .top-bar {
     background-color: #DB6C79;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: start;
+    /* align-items: center; */
     color: white;
     height: 15vh;
     padding-left: 5%;
@@ -48,20 +50,38 @@
     box-shadow: 2px 4px #d13b4d;
 }
 
+.search-box {
+    background-color: #DB6C79;
+    height: 10%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 .sender-line, .subject-line, .content-box {
     background-color: #EFB6B6;
     height: 10%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
 } 
-
-.sender-line {
-    
-}
 
 .email-content-box {
     text-align: center;
     background-color: #E2D7D7;
     flex-direction: column;
+}
+
+.download-btn {
+    border-radius: 5px !important;
+    border: 1px solid #DB6C79 !important;
+    background-color: #E2D7D7 !important;
+    align-self: flex-end;
+}
+
+.search-bar {
+    background-color: #EFB6B6;
 }
