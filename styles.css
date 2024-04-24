@@ -1,10 +1,14 @@
-html, body {
-    height: 100vh;
-}
+ html, body {
+    height: 100%;
+ }
 
 /* column {
     border: 2px solid purple;
-} */
+} */ 
+
+.content-row {
+    background-color: #F08080;
+}
 
 .top-bar {
     background-color: #DB6C79;
@@ -23,7 +27,6 @@ html, body {
     background-color: #F8AD9D;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 10%;
 }
 
 .right-bar {
@@ -37,11 +40,28 @@ html, body {
 .email-box {
     background-color: #DB6C79;
     height: 10%;
-    margin-top: 10%;
     width: 70%;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 2px 4px #d13b4d;
+}
+
+.sender-line, .subject-line, .content-box {
+    background-color: #EFB6B6;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+} 
+
+.sender-line {
+    
+}
+
+.email-content-box {
+    text-align: center;
+    background-color: #E2D7D7;
+    flex-direction: column;
 }
