@@ -13,22 +13,57 @@
             <row class = "">
                     <column class = "col d-flex justify-content-around top-bar">
                         <img class = "img-fluid raspberry-img" src = "./fresh-raspberry.png" data-bs-toggle = "offcanvas" role = "button" href = "#offcanvas" aria-controls="offcanvas"> 
-                        <input type = "text" placeholder = "Search emails..." class = "h-50 w-50 m-auto search-bar">
+                        <input type = "search" placeholder = "Search emails..." name = "email-search" class = "h-50 w-50 m-auto search-bar">
                     </column>
             </row>
 
             <row class = "d-flex content-row flex-grow-1">   
                 <column class = "offcanvas-sm offcanvas-start col-3 col-md-2 pt-5 fs-2 fw-semibold left-bar" tabindex="-1" id = "offcanvas" aria-labelledby="offcanvasLabel">
-                    <button class = "btn compose-btn fs-4 fw-bold"> Compose </button>
+                    <button class = "btn compose-btn fs-4 fw-bold" type = "button" data-bs-toggle= "modal" data-bs-target = "#modal"> 
+                        Compose 
+                    </button>
                     <br>Primary<br>Social<br>Spam<br>Trash
                 </column>
+
+                <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class = "modal-dialog">
+                        <div class="modal-content compose-modal">
+                            <div class="modal-header pe-2 ps-1" style = "justify-content: space-between;" >
+                                <h1 class="modal-title  fs-5" id="exampleModalLabel">Compose Message</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body d-flex gap-2 flex-column p-3">
+                                <div class = "row m-0 compose-recipient">
+                                    <label class = "col-3 col-form-label pe-0 ps-2" for = "recipient"> To: </label>
+                                    <column class = "col-9 d-flex align-content-center">
+                                        <input type = "email" class = "input-line" id = "recipient" placeholder = "recipient@raspberry.net">
+                                    </column>
+                                </div>
+                                <div class = "row m-0 compose-subject">
+                                    <label class = "col-3 col-form-label pe-0 ps-2" for = "subject"> Subject: </label>
+                                    <column class = "col-9 d-flex align-content-center">
+                                        <input type = "email" class = "input-line" id = "subject" placeholder= "Subject">
+                                    </column>
+                                </div>
+                                <div>
+                                    <label for = "compose-area" class = ""> Compose Area </label>
+                                    <textarea class = "form-control" id = "compose-area" style = "height: 200px;"></textarea>
+                                </div>
+                                <div class = "button-line d-flex justify-content-between">
+                                    <button class = "btn btn-danger" data-bs-dismiss= "modal"> Exit </button>
+                                    <button class = "btn btn-success"> Send Email</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <column class = "grid py-3 gap-5 col fs-1 right-bar">
                                 
                         <div class = "email-box ">
                             Friend 1
                         </div>
-                        <div class = "email-box">
+                        <div class = "email-box fw-bold">
                             Friend 2
                         </div>
                         <div class = "email-box">
@@ -57,6 +92,7 @@
                             nisi ut aliquip ex ea commodo consequat. 
                         </p>
                         <div class = "d-flex w-100 flex-column">
+                            <button class = "btn download-btn"> Reply </button>
                             <hr class = "w-100 border-3 opacity-50">
                             <div class = "d-flex flex-row justify-content-between">
                                 <h2 class = "fs-5"> cute-cat.png </h2>

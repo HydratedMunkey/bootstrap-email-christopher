@@ -25,7 +25,6 @@ column.offcanvas-sm {
     background-color: #DB6C79;
     display: flex;
     justify-content: start;
-    /* align-items: center; */
     color: white;
     height: 15vh;
     padding-left: 5%;
@@ -109,4 +108,18 @@ column.left-bar {
 
 .search-bar {
     background-color: #EFB6B6;
+}
+
+.compose-modal {
+    background-color: #E2D7D7 !important;
+}
+
+.compose-recipient, .compose-subject, .compose-text, .input-line, #compose-area {
+    background-color: #EFB6B6;
+}
+
+.input-line {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;   
 }
