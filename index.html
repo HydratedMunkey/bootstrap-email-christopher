@@ -12,19 +12,15 @@
 
             <row class = "">
                     <column class = "col d-flex justify-content-around top-bar">
-                        <!-- <a data bs-toggle = "offcanvas" href = "#offcanvas" role = "button" aria-controls="offcanvas"> -->
-                            <img class = "img-fluid mw-50 mh-50 raspberry-img w-auto h-auto" src = "./fresh-raspberry.png"> 
-                            <!-- </a> -->
-                            <!-- <div class = "offcanvas offcanvas-start">
-                            </div> -->
-                            <input type = "text" placeholder = "Search emails..." class = "h-50 w-50 m-auto search-bar">
+                        <img class = "img-fluid raspberry-img" src = "./fresh-raspberry.png" data-bs-toggle = "offcanvas" role = "button" href = "#offcanvas" aria-controls="offcanvas"> 
+                        <input type = "text" placeholder = "Search emails..." class = "h-50 w-50 m-auto search-bar">
                     </column>
             </row>
 
-            <row class = "d-flex content-row flex-grow-1">
-                <column class = "col-3 col-md-2 pt-5 fs-2 fw-semibold left-bar">
-                        <button class = "btn compose-btn fs-4 fw-bold"> Compose </button>
-                        <br>Primary<br>Social<br>Spam<br>Trash
+            <row class = "d-flex content-row flex-grow-1">   
+                <column class = "offcanvas-sm offcanvas-start col-3 col-md-2 pt-5 fs-2 fw-semibold left-bar" tabindex="-1" id = "offcanvas" aria-labelledby="offcanvasLabel">
+                    <button class = "btn compose-btn fs-4 fw-bold"> Compose </button>
+                    <br>Primary<br>Social<br>Spam<br>Trash
                 </column>
 
                 <column class = "grid py-3 gap-5 col fs-1 right-bar">

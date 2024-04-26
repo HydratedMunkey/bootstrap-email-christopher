@@ -7,8 +7,18 @@
     border: 2px solid purple;
 } */ 
 
+@media (min-width: 576px) {
+    .raspberry-img {
+        pointer-events: none;
+    }
+}
+
 .content-row {
     background-color: #F08080;
+}
+
+column.offcanvas-sm {
+    width: 200px !important;
 }
 
 .top-bar {
@@ -23,10 +33,10 @@
 }
 
 
-.left-bar {
-    display: flex;
-    background-color: #F8AD9D;
-    justify-content: start;
+column.left-bar {
+    display: flex; 
+    background-color: #F8AD9D !important;
+    justify-content: start !important; 
     align-items: center;
     flex-direction: column;
 }
