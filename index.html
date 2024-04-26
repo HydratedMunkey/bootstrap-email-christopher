@@ -9,56 +9,67 @@
 </head>
 <body>
     <container class = "container-fluid d-flex flex-column px-0 h-100">
-        <row class = "">
-            <column class = "col d-flex justify-content-around top-bar"> 
-                <img class = "img-fluid raspberry-img w-auto h-auto" src = "./fresh-raspberry.png"> 
-                <input type = "text" class = "h-50 w-50 m-auto search-bar">
-            </column>
-        </row>
-        <row class =  "d-flex h-100 content-row">
-            <column class = "col-3 col-md-2 pt-5 fs-2 fw-semibold lh-lg left-bar"> Primary<br>Social<br>Spam<br>Trash</column>
-            <column class = "grid py-3 gap-5 col fs-1 right-bar">
 
-                <div class = "email-box ">
-                    Friend 1
-                </div>
-                <div class = "email-box">
-                    Friend 2
-                </div>
-                <div class = "email-box">
-                    Friend 3
-                </div>
-                <div class = "email-box">
-                    Friend 4
-                </div>
-                <div class = "email-box">
-                    Friend 5
-                </div>
-                <div class = "email-box">
-                    Friend 6
-                </div>
-            </column>
-            <column class = "d-none d-lg-flex col-lg-4 m-3 p-4 gap-3 email-content-box">
-                <div class = "sender-line fs-2"> Friend 2 </div>
-                <div class = "subject-line fs-2"> About your cat</div>
-                <div class = "content-box fs-5 p-3 flex-fill align-content-between"> 
-                    <p> 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo consequat. 
-                    </p>
-                    <div class = "d-flex w-100 flex-column">
-                        <hr class = "w-100 border-3 opacity-50">
-                        <div class = "d-flex flex-row justify-content-between">
-                            <h2 class = "fs-5"> cute-cat.png </h2>
-                            <button class = "btn download-btn"> Download </button>
+            <row class = "">
+                    <column class = "col d-flex justify-content-around top-bar">
+                        <!-- <a data bs-toggle = "offcanvas" href = "#offcanvas" role = "button" aria-controls="offcanvas"> -->
+                            <img class = "img-fluid mw-50 mh-50 raspberry-img w-auto h-auto" src = "./fresh-raspberry.png"> 
+                            <!-- </a> -->
+                            <!-- <div class = "offcanvas offcanvas-start">
+                            </div> -->
+                            <input type = "text" placeholder = "Search emails..." class = "h-50 w-50 m-auto search-bar">
+                    </column>
+            </row>
+
+            <row class = "d-flex content-row flex-grow-1">
+                <column class = "col-3 col-md-2 pt-5 fs-2 fw-semibold left-bar">
+                        <button class = "btn compose-btn fs-4 fw-bold"> Compose </button>
+                        <br>Primary<br>Social<br>Spam<br>Trash
+                </column>
+
+                <column class = "grid py-3 gap-5 col fs-1 right-bar">
+                                
+                        <div class = "email-box ">
+                            Friend 1
+                        </div>
+                        <div class = "email-box">
+                            Friend 2
+                        </div>
+                        <div class = "email-box">
+                            Friend 3
+                        </div>
+                        <div class = "email-box">
+                            Friend 4
+                        </div>
+                        <div class = "email-box">
+                            Friend 5
+                        </div>
+                        <div class = "email-box">
+                            Friend 6
+                        </div>
+
+                </column>
+
+                <column class = "d-none d-lg-flex col-lg-4 m-3 p-4 gap-3 email-content-box">
+                    <div class = "sender-line fs-2"> Friend 2 </div>
+                    <div class = "subject-line fs-2"> About your cat</div>
+                    <div class = "content-box fs-5 p-3 flex-fill align-content-between"> 
+                        <p> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                        <div class = "d-flex w-100 flex-column">
+                            <hr class = "w-100 border-3 opacity-50">
+                            <div class = "d-flex flex-row justify-content-between">
+                                <h2 class = "fs-5"> cute-cat.png </h2>
+                                <button class = "btn download-btn"> Download </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </column>
-        </row>
-
+                </column>
+            </row>
     </container>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

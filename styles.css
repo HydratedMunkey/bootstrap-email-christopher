@@ -11,7 +11,6 @@
     background-color: #F08080;
 }
 
-
 .top-bar {
     background-color: #DB6C79;
     display: flex;
@@ -27,8 +26,9 @@
 .left-bar {
     display: flex;
     background-color: #F8AD9D;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
 }
 
 .right-bar {
@@ -80,6 +80,21 @@
     border: 1px solid #DB6C79 !important;
     background-color: #E2D7D7 !important;
     align-self: flex-end;
+}
+
+.download-btn:hover {
+    background-color: #e6f1e1 !important;
+}
+
+.download-btn:active {
+    background-color: #c1ffb6 !important;
+}
+
+.compose-btn {
+    border-radius: 5px !important;
+    border: 2px solid black !important;
+    background-color: rgb(100, 177, 80) !important;
+    color: white !important;
 }
 
 .search-bar {
